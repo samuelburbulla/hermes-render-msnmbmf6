@@ -7,15 +7,15 @@ none of the new values appear in any entry or b-file.
 
 ## A325850 — permutations of [n] whose differences of all degrees are nonzero
 
-Known: a(0)..a(10). New:
+Known: a(0)..a(10). New (full list in `b325850.txt`):
 
 | n | a(n) | verification |
 |---|---|---|
 | 11 | 18907320 | fast DFS, second DFS, literal brute force |
 | 12 | 222828774 | fast DFS, second DFS, literal brute force |
 | 13 | 2820233084 | fast DFS, second (independent) DFS |
-| 14 | 38928266496 | fast DFS |
-| 15 | (running) | |
+| 14 | 38928266496 | fast DFS, second (independent) DFS |
+| 15 | 573263771800 | fast DFS (73 min on 4 cores) |
 
 ## A325851 — compositions of n whose differences of all degrees are nonzero
 
