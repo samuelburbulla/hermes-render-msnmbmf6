@@ -10,6 +10,21 @@ and R. J. Mathar asks whether the sequence is A062700 (prime values of σ) from 
 The companion entry [A390836](https://oeis.org/A390836) (numerators) claims
 *"All terms are even, the third is 24 and all the next ones are multiples of 24"*.
 
+## Prior art (read this first)
+
+The characterization below is **not new as a statement**. OEIS [A325436](https://oeis.org/A325436)
+(Jaroslav Krizek, 2019) already says its terms are "the union of the number 3 and numbers m from
+A023194 (σ(m) = prime)", which is the same claim. That comment is asserted without a proof in the
+entry. And [A023194](https://oeis.org/A023194) has long carried the classical argument that σ(m)
+prime forces m to be an even power of a prime, hence a square. Taken together, those two comments
+already imply both A390815 conjectures. The 2026 entry just does not cite them.
+
+What this directory adds: a written proof of the A325436 characterization, a machine-checked Lean
+formalization of it and of the A390815/A390836 statements, and the observation that A390836's
+"all terms are even" fails at its second term. As far as I could tell (the OEIS database snapshot of
+2026-09-27 plus a web search), no proof of the A325436 comment has been published, but I did not do
+a full literature search.
+
 ## Results
 
 **Theorem.** For n ≥ 4:  σ(n) ∣ n!  ⟺  σ(n) is not prime.
